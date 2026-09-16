@@ -1,0 +1,8 @@
+{
+  "name": "Shree Ganesh Darshan & Ashtavinayak",
+  "description": "Sacred biography of Lord Ganesha, detailed birth story, all 8 Ashtavinayak temples, 108 mantra chanting japa mala, animated divine darshan effect, and total Aartis with voice recitation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
