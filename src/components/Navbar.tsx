@@ -61,14 +61,14 @@ export const Navbar: React.FC<Props> = ({ activeTab, setActiveTab, onOpenBlessin
           </button>
 
           {/* Desktop Navigation Items */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) => {
+          <nav className="hidden xl:flex items-center gap-1">
+            {navItems.slice(0, 5).map((item) => {
               const isActive = activeTab === item.id;
               return (
                 <button
                   key={item.id}
                   onClick={() => handleTabClick(item.id)}
-                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold transition-all relative ${
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all relative ${
                     isActive
                       ? 'bg-amber-100 text-amber-950 shadow-sm border border-amber-300'
                       : 'text-stone-600 hover:text-stone-900 hover:bg-amber-50'
@@ -108,7 +108,7 @@ export const Navbar: React.FC<Props> = ({ activeTab, setActiveTab, onOpenBlessin
             {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100"
+              className="xl:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -118,7 +118,7 @@ export const Navbar: React.FC<Props> = ({ activeTab, setActiveTab, onOpenBlessin
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-amber-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-4 space-y-1">
+        <div className="xl:hidden border-t border-amber-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-4 space-y-1">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
             return (
