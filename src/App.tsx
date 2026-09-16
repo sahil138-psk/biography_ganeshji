@@ -24,7 +24,7 @@ import { Footer } from './components/Footer';
 import { ActiveTab } from './types';
 import { playTempleBell } from './utils/audioSynthesizer';
 
-const HERO_IMAGE = '/src/assets/images/ganpati_bappa_hero_1789574643904.jpg';
+const HERO_IMAGE = '/images/ganpati_bappa_hero_1789574643904.jpg';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('darshan');

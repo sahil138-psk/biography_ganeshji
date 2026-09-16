@@ -16,7 +16,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Bhadrapada Shukla Chaturthi and Magh Shukla Chaturthi are celebrated with grand royal palanquin processions (Palkhi Sohala).',
     howToReach: '65 km from Pune via Hadapsar and Saswad. Nearest railway station is Jejuri (17 km).',
     coordinates: { lat: 18.2758, lng: 74.3168 },
-    image: '/src/assets/images/mayureshwar_ganpati_1789575400280.jpg',
+    image: '/images/mayureshwar_ganpati_1789575400280.jpg',
     colorTone: 'from-amber-600 to-orange-500',
   },
   {
@@ -34,7 +34,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Somvati Amavasya and Ganesh Jayanti (Magha Chaturthi) draw thousands of pilgrims who perform circumambulation (Pradakshina) around the entire hill (approx 1 km).',
     howToReach: 'Approx. 95 km from Pune. Can be accessed via Daund or Shirur on the Bhima riverbanks.',
     coordinates: { lat: 18.3972, lng: 74.9922 },
-    image: '/src/assets/images/siddhivinayak_siddhatek_1789575420623.jpg',
+    image: '/images/siddhivinayak_siddhatek_1789575420623.jpg',
     colorTone: 'from-orange-600 to-red-600',
   },
   {
@@ -52,7 +52,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Celebrates Dhundi Vinayak utsav and Maghi Ganeshotsav with widespread prasad distribution of Besan Laddoos and Modaks.',
     howToReach: 'Approx. 120 km from Mumbai and 124 km from Pune, nestled between the Sarasgad fort and the Amba River.',
     coordinates: { lat: 18.5369, lng: 73.2215 },
-    image: '/src/assets/images/ballaleshwar_pali_1789575442863.jpg',
+    image: '/images/ballaleshwar_pali_1789575442863.jpg',
     colorTone: 'from-red-600 to-amber-700',
   },
   {
@@ -70,7 +70,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Maghi Ganeshotsav with special Abhishek and lighting of hundreds of ghee lamps around the holy pond.',
     howToReach: '80 km from Mumbai along the Old Mumbai-Pune Highway, 6 km from Khopoli.',
     coordinates: { lat: 18.8258, lng: 73.3512 },
-    image: '/src/assets/images/varadavinayak_mahad_1789575471080.jpg',
+    image: '/images/varadavinayak_mahad_1789575471080.jpg',
     colorTone: 'from-amber-500 to-yellow-600',
   },
   {
@@ -88,7 +88,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Celebrates Rama-Madhav Smruti Utsav along with Bhadrapada and Magha Ganesh Chaturthi with great classical music concerts.',
     howToReach: '25 km east of Pune city at the confluence of the Mula-Mutha rivers.',
     coordinates: { lat: 18.5278, lng: 74.0489 },
-    image: '/src/assets/images/chintamani_theur_1789575487712.jpg',
+    image: '/images/chintamani_theur_1789575487712.jpg',
     colorTone: 'from-emerald-600 to-teal-700',
   },
   {
@@ -106,7 +106,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Ganesh Jayanti is celebrated with thousands of devotees climbing the 307 steps with saffron flags while chanting "Ganpati Bappa Morya".',
     howToReach: '95 km north of Pune, 5 km from Junnar town. Nearest major junction is Kalyan or Pune.',
     coordinates: { lat: 19.2415, lng: 73.8821 },
-    image: '/src/assets/images/girijatmak_lenyadri_1789575502957.jpg',
+    image: '/images/girijatmak_lenyadri_1789575502957.jpg',
     colorTone: 'from-stone-600 to-amber-700',
   },
   {
@@ -124,7 +124,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Tripuri Pournima is celebrated with an awe-inspiring Deepotsav (festival of thousands of oil lamps) lighting up the Kukadi riverbank.',
     howToReach: '85 km from Pune, 12 km from Narayangaon along the Pune-Nashik highway.',
     coordinates: { lat: 19.1912, lng: 73.9576 },
-    image: '/src/assets/images/vighnahar_ozar_1789575526750.jpg',
+    image: '/images/vighnahar_ozar_1789575526750.jpg',
     colorTone: 'from-yellow-600 to-amber-600',
   },
   {
@@ -142,7 +142,7 @@ export const ASHTAVINAYAK_TEMPLES: AshtavinayakTemple[] = [
     festival: 'Bhadrapada Ganesh Chaturthi celebrated with a 21-gun salute tradition and royal brass bands during Rathotsav (Chariot procession).',
     howToReach: '50 km from Pune along the Pune-Ahmednagar highway.',
     coordinates: { lat: 18.7562, lng: 74.2443 },
-    image: '/src/assets/images/mahaganapati_ranjangaon_1789575541377.jpg',
+    image: '/images/mahaganapati_ranjangaon_1789575541377.jpg',
     colorTone: 'from-amber-700 to-red-700',
   },
 ];

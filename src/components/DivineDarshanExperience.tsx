@@ -23,7 +23,7 @@ import {
 import { HumanizedBhakt } from './HumanizedBhakt';
 
 // Generated imagery
-const GANESHA_IMAGE = '/src/assets/images/ganesha_divine_darshan_1789574669423.jpg';
+const GANESHA_IMAGE = '/images/ganesha_divine_darshan_1789574669423.jpg';
 
 export const DivineDarshanExperience: React.FC = () => {
   const [darshanStage, setDarshanStage] = useState<'entering' | 'pranam' | 'blessing' | 'complete'>('entering');

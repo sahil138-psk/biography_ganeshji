@@ -20,7 +20,7 @@ import {
 import { BIRTH_STORY_CHAPTERS, GANESHA_SYMBOLS } from '../data/birthStoryData';
 import { devotionalVoiceReciter } from '../utils/audioSynthesizer';
 
-const BIRTH_STORY_IMAGE = '/src/assets/images/ganesha_birth_kailash_1789574689948.jpg';
+const BIRTH_STORY_IMAGE = '/images/ganesha_birth_kailash_1789574689948.jpg';
 
 const ICON_MAP: Record<string, React.ReactNode> = {
   Brain: <Brain className="w-5 h-5 text-amber-600" />,
