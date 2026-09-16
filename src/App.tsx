@@ -159,104 +159,110 @@ export default function App() {
       </section>
 
       {/* QUICK TAB SWITCHER TASKBAR */}
-      <div className="bg-white/95 backdrop-blur-md border-b border-amber-200 shadow-sm sticky top-16 sm:top-20 z-30 transition-all">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-1.5 py-2.5 overflow-x-auto no-scrollbar scroll-smooth justify-start md:justify-center">
-            <button
-              onClick={() => setActiveTab('darshan')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'darshan'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
+      <div className="bg-white/95 backdrop-blur-md border-b border-amber-200/90 shadow-sm sticky top-16 sm:top-20 z-30 transition-all">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative flex items-center py-2.5">
+            {/* Scroll Container */}
+            <div
+              id="sacred-tab-bar"
+              className="w-full flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth px-1"
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>1. Animated Darshan</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('darshan')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'darshan'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <Sparkles className="w-4 h-4 text-amber-300" />
+                <span>1. Animated Darshan</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('birth-story')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'birth-story'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <BookOpen className="w-3.5 h-3.5" />
-              <span>2. Birth Story & Symbolism</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('birth-story')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'birth-story'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>2. Birth Story & Symbolism</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('ashtavinayak')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'ashtavinayak'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <Compass className="w-3.5 h-3.5" />
-              <span>3. All 8 Ashtavinayak</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('ashtavinayak')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'ashtavinayak'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <Compass className="w-4 h-4" />
+                <span>3. All 8 Ashtavinayak</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('mantra-108')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'mantra-108'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <span>📿</span>
-              <span>4. 108 Mantra Japa</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('mantra-108')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'mantra-108'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <span className="text-base">📿</span>
+                <span>4. 108 Mantra Japa</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('aartis')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'aartis'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <Flame className="w-3.5 h-3.5" />
-              <span>5. Total Aartis & Voice</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('aartis')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'aartis'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <Flame className="w-4 h-4 text-orange-400" />
+                <span>5. Total Aartis & Voice</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('quiz')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'quiz'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <Award className="w-3.5 h-3.5" />
-              <span>6. Quiz & Certificate</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('quiz')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'quiz'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <Award className="w-4 h-4 text-yellow-500" />
+                <span>6. Quiz & Certificate</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('dhol-tasha')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'dhol-tasha'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <span>🥁</span>
-              <span>7. Dhol Tasha Jam</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('dhol-tasha')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'dhol-tasha'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <span className="text-base">🥁</span>
+                <span>7. Dhol Tasha Jam</span>
+              </button>
 
-            <button
-              onClick={() => setActiveTab('blessing-card')}
-              className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === 'blessing-card'
-                  ? 'bg-amber-600 text-white shadow-sm ring-1 ring-amber-700/20'
-                  : 'bg-amber-50/80 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200/80'
-              }`}
-            >
-              <span>🪷</span>
-              <span>8. E-Blessing Card</span>
-            </button>
+              <button
+                onClick={() => setActiveTab('blessing-card')}
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all flex-shrink-0 cursor-pointer ${
+                  activeTab === 'blessing-card'
+                    ? 'bg-amber-600 text-white shadow-md ring-2 ring-amber-600/30 font-extrabold'
+                    : 'bg-amber-50/90 text-stone-700 hover:bg-amber-100 hover:text-stone-900 border border-amber-200'
+                }`}
+              >
+                <span className="text-base">🪷</span>
+                <span>8. E-Blessing Card</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -60,29 +60,6 @@ export const Navbar: React.FC<Props> = ({ activeTab, setActiveTab, onOpenBlessin
             </div>
           </button>
 
-          {/* Desktop Navigation Items */}
-          <nav className="hidden xl:flex items-center gap-1">
-            {navItems.slice(0, 5).map((item) => {
-              const isActive = activeTab === item.id;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => handleTabClick(item.id)}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all relative ${
-                    isActive
-                      ? 'bg-amber-100 text-amber-950 shadow-sm border border-amber-300'
-                      : 'text-stone-600 hover:text-stone-900 hover:bg-amber-50'
-                  }`}
-                >
-                  <span className={isActive ? 'text-amber-700' : 'text-stone-400'}>
-                    {item.icon}
-                  </span>
-                  <span>{item.label}</span>
-                </button>
-              );
-            })}
-          </nav>
-
           {/* Header Action Buttons */}
           <div className="flex items-center gap-2">
             {/* Daily Modak Blessing Trigger */}
